@@ -34,7 +34,7 @@ const features = [
     {
         icon: Smartphone,
         title: "Native Experience",
-        description: "Designed for iOS with full support for Dark Mode, widgets, and smooth performance."
+        description: "Designed for iOS with full support for Apple Sign-in, Dark Mode, and smooth performance."
     },
     {
         icon: Shield,
