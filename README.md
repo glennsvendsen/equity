@@ -4,7 +4,7 @@ Landing page for Equity, a minimalistic iOS app for tracking your work-life time
 
 ## 🌐 Live Site
 
-Visit: [https://YOUR_USERNAME.github.io/equity-time-web/equity/](https://YOUR_USERNAME.github.io/equity-time-web/equity/)
+Visit: **[https://glennsvendsen.github.io/equity-web/](https://glennsvendsen.github.io/equity-web/)**
 
 ## 📱 Download the App
 
