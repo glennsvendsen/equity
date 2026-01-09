@@ -4,7 +4,9 @@ Landing page for Equity, a minimalistic iOS app for tracking your work-life time
 
 ## 🌐 Live Site
 
-Visit: [https://glennsvendsen.github.io/equity-web/](https://glennsvendsen.github.io/equity-web/)
+Visit: **[https://glennsvendsen.github.io/equity/](https://glennsvendsen.github.io/equity/)**
+
+*(Will be available at **arcticlabs.io/equity/** once custom domain is configured)*
 
 ## 📱 Download the App
 
