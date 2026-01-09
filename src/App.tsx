@@ -5,7 +5,7 @@ import Support from './pages/Support';
 
 function App() {
   return (
-    <BrowserRouter basename="/equity-web">
+    <BrowserRouter basename="/equity">
       <Routes>
         <Route path="/" element={<Index />} />
         <Route path="/privacy" element={<Privacy />} />
