@@ -67,11 +67,11 @@ const Hero = () => {
                     <div className="relative opacity-0 animate-fade-up flex justify-center" style={{ animationDelay: "0.3s" }}>
                         <div className="absolute -inset-8 bg-gradient-to-b from-accent/5 via-transparent to-transparent rounded-full blur-3xl -z-10" />
                         <img
-                            src="./screenshots/1-balance.jpg"
+                            src="./screenshots/1-balance.png"
                             alt="Equity home screen showing a total balance of +3.5 hours"
                             width={720}
                             height={1565}
-                            className="w-[280px] md:w-[340px] h-auto rounded-[2rem] border border-border shadow-2xl shadow-primary/10"
+                            className="w-[300px] md:w-[360px] h-auto"
                         />
                     </div>
                 </div>

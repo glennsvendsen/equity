@@ -10,7 +10,7 @@ const slides = [
 
 const RealScreenshots = () => {
     return (
-        <section className="py-32 bg-gradient-to-b from-background via-secondary/20 to-background">
+        <section className="py-32">
             <div className="container">
                 <div className="text-center max-w-2xl mx-auto mb-16 opacity-0 animate-fade-up" style={{ animationDelay: "0.1s" }}>
                     <p className="text-sm tracking-label uppercase text-muted-foreground mb-4">
@@ -31,12 +31,12 @@ const RealScreenshots = () => {
                 {slides.map((slide) => (
                     <figure key={slide.src} className="snap-center shrink-0 w-[260px] md:w-[280px]">
                         <img
-                            src={`./screenshots/${slide.src}.jpg`}
+                            src={`./screenshots/${slide.src}.png`}
                             alt={slide.alt}
                             width={720}
                             height={1565}
                             loading="lazy"
-                            className="w-full h-auto rounded-3xl border border-border shadow-xl"
+                            className="w-full h-auto"
                         />
                     </figure>
                 ))}
