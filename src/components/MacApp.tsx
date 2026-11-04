@@ -68,9 +68,9 @@ const MacApp = () => {
                                 </dd>
                             </div>
                             <div>
-                                <dt className="font-medium mb-1">Notarized by Apple</dt>
+                                <dt className="font-medium mb-1">Install</dt>
                                 <dd className="text-muted-foreground leading-relaxed">
-                                    Distributed directly from this site as a DMG, not through the Mac App Store. Open it and drag Equity to Applications.
+                                    Open the DMG and drag Equity to Applications.
                                 </dd>
                             </div>
                         </dl>
