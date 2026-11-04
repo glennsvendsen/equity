@@ -59,7 +59,14 @@ const MacApp = () => {
                         </div>
                     </div>
 
-                    <div className="flex justify-center">
+                    <div className="flex flex-col items-center">
+                        <img
+                            src="./mac/menubar.png"
+                            alt="Equity in the macOS menu bar showing the balance +3.5 hours"
+                            width={200}
+                            height={80}
+                            className="w-[160px] h-auto -mb-2"
+                        />
                         <img
                             src="./mac/popover.png"
                             alt="The Equity menu bar popover showing a balance of +3.5 hours, week and month totals, a timer and recent entries"
