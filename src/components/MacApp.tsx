@@ -10,11 +10,18 @@ const points = [
 
 const MacApp = () => {
     return (
-        <section id="mac" className="py-32 bg-secondary/30">
+        <section id="mac" className="py-32">
             <div className="container">
                 <div className="grid lg:grid-cols-2 gap-16 items-center max-w-5xl mx-auto">
                     <div className="space-y-8">
                         <div className="space-y-4">
+                            <img
+                                src="./mac/icon.png"
+                                alt="Equity for Mac app icon"
+                                width={64}
+                                height={64}
+                                className="w-16 h-16 mb-6"
+                            />
                             <p className="text-sm tracking-label uppercase text-muted-foreground">
                                 Equity for Mac
                             </p>
@@ -52,9 +59,20 @@ const MacApp = () => {
                         </div>
                     </div>
 
-                    <div className="p-8 rounded-2xl border border-border bg-card space-y-6">
+                    <div className="flex justify-center">
+                        <img
+                            src="./mac/popover.png"
+                            alt="The Equity menu bar popover showing a balance of +3.5 hours, week and month totals, a timer and recent entries"
+                            width={360}
+                            height={840}
+                            loading="lazy"
+                            className="w-[300px] md:w-[360px] h-auto"
+                        />
+                    </div>
+                </div>
+                    <div className="max-w-5xl mx-auto mt-16 p-8 rounded-2xl border border-border bg-card space-y-6">
                         <p className="text-sm tracking-label uppercase text-muted-foreground">Good to know</p>
-                        <dl className="space-y-5 text-sm">
+                        <dl className="grid md:grid-cols-3 gap-8 text-sm">
                             <div>
                                 <dt className="font-medium mb-1">Requires Equity Pro</dt>
                                 <dd className="text-muted-foreground leading-relaxed">
@@ -75,7 +93,6 @@ const MacApp = () => {
                             </div>
                         </dl>
                     </div>
-                </div>
             </div>
         </section>
     );
