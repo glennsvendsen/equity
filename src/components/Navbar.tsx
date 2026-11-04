@@ -9,6 +9,12 @@ const Header = () => {
                 </Link>
 
                 <nav className="flex items-center gap-8">
+                    <a
+                        href={`${import.meta.env.BASE_URL}#mac`}
+                        className="hidden sm:inline text-sm tracking-label uppercase text-muted-foreground hover:text-foreground transition-colors link-underline"
+                    >
+                        Mac
+                    </a>
                     <Link
                         to="/privacy"
                         className="text-sm tracking-label uppercase text-muted-foreground hover:text-foreground transition-colors link-underline"

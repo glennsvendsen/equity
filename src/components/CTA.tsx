@@ -1,3 +1,5 @@
+import { APP_STORE_URL, MAC_DOWNLOAD_URL } from "../lib/links";
+
 const CTA = () => {
     return (
         <section className="py-32">
@@ -12,11 +14,11 @@ const CTA = () => {
                         <span className="text-positive">time balance</span>
                     </h2>
                     <p className="text-lg text-muted-foreground mb-10 max-w-lg mx-auto">
-                        Download Equity today and start tracking your time with clarity. Available on the App Store.
+                        Download Equity today and start tracking your time with clarity. Available on the App Store, with a companion for your Mac.
                     </p>
 
                     <a
-                        href="https://apps.apple.com/no/app/equity-time-tracker/id6756896058"
+                        href={APP_STORE_URL}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="inline-flex items-center gap-3 bg-primary text-primary-foreground px-8 py-4 rounded-xl hover:opacity-90 transition-opacity"
@@ -29,6 +31,11 @@ const CTA = () => {
                             <p className="text-lg font-medium">App Store</p>
                         </div>
                     </a>
+
+                    <p className="mt-6 text-sm text-muted-foreground">
+                        Using Equity Pro on a Mac?{" "}
+                        <a href={MAC_DOWNLOAD_URL} className="text-foreground link-underline">Download the menu bar app</a>
+                    </p>
                 </div>
             </div>
         </section>

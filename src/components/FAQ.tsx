@@ -27,7 +27,7 @@ function FAQItem({ question, answer }: FAQItemProps) {
                 </span>
             </button>
             <div
-                className={`overflow-hidden transition-all duration-300 ease-out ${isOpen ? "max-h-[300px] opacity-100 mb-6" : "max-h-0 opacity-0"
+                className={`overflow-hidden transition-all duration-300 ease-out ${isOpen ? "max-h-[400px] opacity-100 mb-6" : "max-h-0 opacity-0"
                     }`}
             >
                 <div className="text-foreground/60 leading-relaxed pr-12">
@@ -42,23 +42,27 @@ export function FAQ() {
     const faqs = [
         {
             question: "How does Equity track my time?",
-            answer: "You manually add entries for work hours and time off. Equity calculates your running balance by comparing your actual hours against your expected schedule."
+            answer: "You add entries for extra hours and time off, or import them from your calendar. Equity calculates your running balance against your weekly target and turns it into a score from 0 to 100."
         },
         {
             question: "Is my data private?",
-            answer: "Absolutely. All data is stored locally on your device and synced via your personal iCloud account. We have zero access to your information."
+            answer: "Yes. Your data is encrypted in transit and at rest, stored securely in the cloud so it syncs between your devices, and never used for tracking."
         },
         {
             question: "Can I export my data?",
-            answer: "Yes, you can export your complete history as a CSV file at any time for your records or reporting purposes."
+            answer: "Yes. Export a PDF or Excel report for any period. One export is free; unlimited exports are part of Equity Pro."
         },
         {
             question: "Does it work offline?",
-            answer: "Yes, Equity works completely offline. Your data syncs automatically when you're connected to the internet."
+            answer: "Equity keeps working without a connection and syncs your entries when you're back online."
+        },
+        {
+            question: "Is there a Mac app?",
+            answer: "Yes. Equity for Mac is a menu bar companion for macOS 14 or later. It requires Equity Pro and uses the same account as the iOS app. Download the DMG from this page, open it and drag Equity to your Applications folder."
         },
         {
             question: "How do I delete my account?",
-            answer: "Simply delete the app from your device. Since all data is stored locally and in your iCloud, removing the app removes all associated data."
+            answer: "Go to Settings > Profile in the app and tap Delete Account. This permanently removes your data."
         }
     ];
 

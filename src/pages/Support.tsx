@@ -6,7 +6,7 @@ import { useState } from "react";
 const faqs = [
     {
         question: "How do I add time entries?",
-        answer: "Tap the 'Add Time' button on the main screen to enter a custom amount, or long-press it to reveal quick add options (1h, 2h, 3h, or 8h). Your entry will be logged immediately."
+        answer: "Tap 'Add Time' on the main screen to enter hours, or long-press it for quick add (1h, 2h, 3h or 8h). You can also start a timer, import meetings from your calendar, or use 'Add a Week' to log a whole week at once."
     },
     {
         question: "How does the time balance work?",
@@ -14,11 +14,15 @@ const faqs = [
     },
     {
         question: "Can I export my data?",
-        answer: "Yes! Go to Settings and tap 'Export Data'. You can choose to export as PDF for a formatted report or Excel for raw data. Select your preferred time range (last week, month, quarter, or year)."
+        answer: "Yes! Tap the export button on the main screen and choose PDF for a formatted report or Excel for raw data, then pick a time range. One export is free; unlimited exports are part of Equity Pro."
     },
     {
         question: "How do I sync across devices?",
         answer: "Once you're signed in with your account, your data automatically syncs across all your devices. Make sure you're connected to the internet for syncing to occur."
+    },
+    {
+        question: "Is there a Mac app?",
+        answer: "Yes. Equity for Mac is a menu bar app for macOS 14 or later. It shows your balance, score, week and month totals, a timer, quick add and recent entries. It requires Equity Pro (bought in the iOS app) and signs in with the same account. Download the DMG from the Equity website, open it and drag Equity to your Applications folder. If you see a 'locked' screen, get Pro in the iOS app and check again."
     },
     {
         question: "Can I delete my account?",

@@ -1,3 +1,13 @@
+const slides = [
+    { src: "2-balancecard", alt: "Total balance card with week and month totals and recent entries", title: "Your balance" },
+    { src: "3-score", alt: "Balance score gauge", title: "Balance score" },
+    { src: "4-addweek", alt: "Add a week screen", title: "Add a week" },
+    { src: "5-timeline", alt: "Timeline of overtime and time off", title: "Timeline" },
+    { src: "6-trend", alt: "Balance history chart with peak, low and average", title: "Trend" },
+    { src: "7-export", alt: "PDF and Excel export", title: "Export" },
+    { src: "8-dark", alt: "Equity in dark mode", title: "Dark mode" },
+];
+
 const RealScreenshots = () => {
     return (
         <section className="py-32 bg-gradient-to-b from-background via-secondary/20 to-background">
@@ -12,84 +22,24 @@ const RealScreenshots = () => {
                         <span className="text-muted-foreground">Built for power users.</span>
                     </h2>
                 </div>
+            </div>
 
-                <div className="grid md:grid-cols-3 gap-8 max-w-7xl mx-auto items-start">
-                    {/* Smart Fill & Calendar Import Screenshot */}
-                    <div className="opacity-0 animate-fade-up flex flex-col items-center" style={{ animationDelay: "0.2s" }}>
-                        <div className="relative group w-full max-w-[320px]">
-                            <div className="absolute -inset-1 bg-gradient-to-r from-accent/20 to-accent/10 rounded-3xl blur-xl group-hover:blur-2xl transition-all duration-500" />
-                            <div className="relative bg-card border border-border rounded-3xl p-2 shadow-2xl overflow-hidden">
-                                <img
-                                    src="./add-entry-screenshot.png"
-                                    alt="Smart Fill and Calendar Import"
-                                    className="w-full h-auto rounded-2xl"
-                                />
-                            </div>
-                        </div>
-                        <div className="mt-8 space-y-3 text-center">
-                            <h3 className="text-2xl font-light">Smart Fill & Calendar</h3>
-                            <p className="text-muted-foreground leading-relaxed text-sm">
-                                Type naturally or import directly from your calendar. Equity automatically calculates hours.
-                            </p>
-                        </div>
-                    </div>
-
-                    {/* Balance Score Screenshot */}
-                    <div className="opacity-0 animate-fade-up flex flex-col items-center" style={{ animationDelay: "0.3s" }}>
-                        <div className="relative group w-full max-w-[320px]">
-                            <div className="absolute -inset-1 bg-gradient-to-r from-positive/20 to-accent/20 rounded-3xl blur-xl group-hover:blur-2xl transition-all duration-500" />
-                            <div className="relative bg-card border border-border rounded-3xl p-2 shadow-2xl overflow-hidden">
-                                <img
-                                    src="./balance-score-new.png"
-                                    alt="Personal Balance Score"
-                                    className="w-full h-auto rounded-2xl"
-                                />
-                            </div>
-                        </div>
-                        <div className="mt-8 space-y-3 text-center">
-                            <h3 className="text-2xl font-light">Balance Score</h3>
-                            <p className="text-muted-foreground leading-relaxed text-sm">
-                                Visual health check of your work-life balance. Gamified to keep you in the perfect zone.
-                            </p>
-                        </div>
-                    </div>
-
-                    {/* Insights Screenshot */}
-                    <div className="opacity-0 animate-fade-up flex flex-col items-center" style={{ animationDelay: "0.4s" }}>
-                        <div className="relative group w-full max-w-[320px]">
-                            <div className="absolute -inset-1 bg-gradient-to-r from-accent/10 to-accent/20 rounded-3xl blur-xl group-hover:blur-2xl transition-all duration-500" />
-                            <div className="relative bg-card border border-border rounded-3xl p-2 shadow-2xl overflow-hidden">
-                                <img
-                                    src="./insights-screenshot.png"
-                                    alt="Advanced Insights and Analytics"
-                                    className="w-full h-auto rounded-2xl"
-                                />
-                            </div>
-                        </div>
-                        <div className="mt-8 space-y-3 text-center">
-                            <h3 className="text-2xl font-light">Advanced Insights</h3>
-                            <p className="text-muted-foreground leading-relaxed text-sm">
-                                Understand your work patterns with detailed analytics. Track overtime and weekly comparisons.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                {/* Feature highlights */}
-                <div className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto mt-20 opacity-0 animate-fade-up" style={{ animationDelay: "0.6s" }}>
-                    <div className="text-center p-6 rounded-2xl border border-border bg-card/50">
-                        <p className="text-3xl font-light mb-2">PDF & Excel</p>
-                        <p className="text-sm text-muted-foreground">Export your data</p>
-                    </div>
-                    <div className="text-center p-6 rounded-2xl border border-border bg-card/50">
-                        <p className="text-3xl font-light mb-2">Cloud Sync</p>
-                        <p className="text-sm text-muted-foreground">Across all devices</p>
-                    </div>
-                    <div className="text-center p-6 rounded-2xl border border-border bg-card/50">
-                        <p className="text-3xl font-light mb-2">Pro Features</p>
-                        <p className="text-sm text-muted-foreground">Advanced insights & export</p>
-                    </div>
-                </div>
+            <div
+                className="flex gap-6 overflow-x-auto snap-x snap-mandatory px-6 pb-8"
+                aria-label="Equity screenshots"
+            >
+                {slides.map((slide) => (
+                    <figure key={slide.src} className="snap-center shrink-0 w-[260px] md:w-[280px]">
+                        <img
+                            src={`./screenshots/${slide.src}.jpg`}
+                            alt={slide.alt}
+                            width={720}
+                            height={1565}
+                            loading="lazy"
+                            className="w-full h-auto rounded-3xl border border-border shadow-xl"
+                        />
+                    </figure>
+                ))}
             </div>
         </section>
     );

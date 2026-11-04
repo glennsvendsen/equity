@@ -1,30 +1,30 @@
-import { Clock, TrendingUp, Calendar, FileText, Smartphone, Shield, Sparkles, CalendarClock } from "lucide-react";
+import { Clock, TrendingUp, CalendarDays, FileText, Laptop, Shield, Sparkles, CalendarClock, Gauge } from "lucide-react";
 
 const features = [
     {
-        icon: Sparkles,
-        title: "Smart Fill",
-        description: "Type naturally like 'Work 9-17' or '#Meeting 2h' and Equity automatically calculates the hours for you."
+        icon: Gauge,
+        title: "Balance Score",
+        description: "One score from 0 to 100 shows whether you're ahead, behind or right on target, with a hint to match."
+    },
+    {
+        icon: Clock,
+        title: "Quick Add & Timer",
+        description: "Long-press Add to log 1h, 2h, 3h or 8h, or start a timer and log the time when you stop."
     },
     {
         icon: CalendarClock,
         title: "Import from Calendar",
-        description: "Seamlessly import events from your iOS calendar to automatically track your work hours."
+        description: "Turn meetings into entries in one tap. Declined events are skipped and you choose which calendars to use."
     },
     {
-        icon: Clock,
-        title: "Heuristic Quick Add",
-        description: "Long-press the Add button to instantly log 1h, 2h, 3h, or 8h. Perfect for fast tracking without typing."
-    },
-    {
-        icon: Calendar,
-        title: "Calendar View",
-        description: "See your time entries at a glance with an intuitive calendar interface showing your daily balance."
+        icon: CalendarDays,
+        title: "Add a Week",
+        description: "Forgot to log? Enter the hours you worked for a whole week and Equity compares it to your weekly target."
     },
     {
         icon: TrendingUp,
         title: "Balance History",
-        description: "Visualize your time balance over weeks, months, and quarters with beautiful charts."
+        description: "See peak, low and average across weeks, months, quarters and years, plus a full timeline of every entry."
     },
     {
         icon: FileText,
@@ -32,14 +32,14 @@ const features = [
         description: "Generate PDF or Excel reports for your records or to share with your employer."
     },
     {
-        icon: Smartphone,
-        title: "Native Experience",
-        description: "Designed for iOS with full support for Apple Sign-in, Dark Mode, and smooth performance."
+        icon: Laptop,
+        title: "Mac Menu Bar App",
+        description: "Keep your balance one glance away on your Mac. Same account, same data. Included with Equity Pro."
     },
     {
         icon: Shield,
         title: "Private & Secure",
-        description: "Your data is encrypted and synced securely to the cloud. No tracking, ever."
+        description: "Your data is encrypted and synced securely to the cloud. Sign in with Apple, English and Norwegian, no tracking."
     }
 ];
 
@@ -80,7 +80,7 @@ const Features = () => {
                     <div className="inline-flex items-center gap-3 px-6 py-3 rounded-full border border-accent/20 bg-accent/5">
                         <Sparkles className="w-5 h-5 text-accent" />
                         <span className="text-sm font-medium">
-                            One-time purchase · No subscription required
+                            Free to start · Pro as a one-time purchase or yearly
                         </span>
                     </div>
                 </div>

@@ -2,7 +2,7 @@ import Header from '../components/Navbar';
 import Hero from '../components/Hero';
 import Features from '../components/Features';
 import RealScreenshots from '../components/RealScreenshots';
-import AppShowcase from '../components/AppShowcase';
+import MacApp from '../components/MacApp';
 import CTA from '../components/CTA';
 import Footer from '../components/Footer';
 
@@ -14,7 +14,7 @@ function Index() {
                 <Hero />
                 <Features />
                 <RealScreenshots />
-                <AppShowcase />
+                <MacApp />
                 <CTA />
             </main>
             <Footer />

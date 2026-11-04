@@ -1,4 +1,4 @@
-import appScreenshot from "../assets/app-screenshot-main.png";
+import { APP_STORE_URL } from "../lib/links";
 
 const Hero = () => {
     return (
@@ -20,7 +20,7 @@ const Hero = () => {
 
                         <p className="text-lg text-muted-foreground max-w-md leading-relaxed">
                             A minimalistic time tracker that helps you visualize your work-life balance.
-                            Add hours worked, deduct time off, and see your true time equity.
+                            Log overtime and time off, follow your balance score, and see your true time equity. On iPhone and in your Mac menu bar.
                         </p>
 
                         <div className="flex items-center gap-4 pt-4">
@@ -31,7 +31,7 @@ const Hero = () => {
                                 Learn More
                             </a>
                             <a
-                                href="https://apps.apple.com/no/app/equity-time-tracker/id6756896058"
+                                href={APP_STORE_URL}
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="inline-flex items-center justify-center h-12 px-8 border border-border text-sm tracking-label uppercase rounded-lg hover:bg-secondary transition-colors"
@@ -46,7 +46,7 @@ const Hero = () => {
                                 <svg className="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 20 20">
                                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                                 </svg>
-                                <span>One-time purchase</span>
+                                <span>Free to start</span>
                             </div>
                             <div className="flex items-center gap-2">
                                 <svg className="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 20 20">
@@ -58,51 +58,21 @@ const Hero = () => {
                                 <svg className="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 20 20">
                                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                                 </svg>
-                                <span>Cloud sync</span>
+                                <span>Syncs to your Mac</span>
                             </div>
                         </div>
                     </div>
 
-                    {/* Right - iPhone 16 Pro Frame with Screenshot */}
+                    {/* Right - store slide (already includes the device frame) */}
                     <div className="relative opacity-0 animate-fade-up flex justify-center" style={{ animationDelay: "0.3s" }}>
-                        <div className="relative">
-                            {/* iPhone 16 Pro Frame */}
-                            <div className="relative mx-auto w-[280px] md:w-[320px]">
-                                {/* Outer frame */}
-                                <div className="relative bg-[#1a1a1a] rounded-[3rem] p-[3px] shadow-2xl shadow-primary/10">
-                                    {/* Titanium edge */}
-                                    <div className="relative bg-gradient-to-b from-[#3a3a3c] via-[#2c2c2e] to-[#1c1c1e] rounded-[2.875rem] p-[2px]">
-                                        {/* Inner black bezel */}
-                                        <div className="relative bg-black rounded-[2.75rem] p-[10px]">
-                                            {/* Screen container */}
-                                            <div className="relative rounded-[2.25rem] overflow-hidden bg-black">
-                                                {/* Dynamic Island */}
-                                                <div className="absolute top-3 left-1/2 -translate-x-1/2 z-10 w-[90px] h-[28px] bg-black rounded-full" />
-
-                                                {/* Screenshot */}
-                                                <img
-                                                    src={appScreenshot}
-                                                    alt="Equity App - Time Balance Tracker"
-                                                    className="w-full h-auto block"
-                                                />
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    {/* Side buttons */}
-                                    {/* Power button */}
-                                    <div className="absolute right-[-2px] top-[120px] w-[3px] h-[60px] bg-[#2c2c2e] rounded-r-sm" />
-
-                                    {/* Volume buttons */}
-                                    <div className="absolute left-[-2px] top-[100px] w-[3px] h-[28px] bg-[#2c2c2e] rounded-l-sm" />
-                                    <div className="absolute left-[-2px] top-[140px] w-[3px] h-[50px] bg-[#2c2c2e] rounded-l-sm" />
-                                    <div className="absolute left-[-2px] top-[200px] w-[3px] h-[50px] bg-[#2c2c2e] rounded-l-sm" />
-                                </div>
-                            </div>
-
-                            {/* Subtle reflection/glow effect */}
-                            <div className="absolute -inset-8 bg-gradient-to-b from-accent/5 via-transparent to-transparent rounded-full blur-3xl -z-10" />
-                        </div>
+                        <div className="absolute -inset-8 bg-gradient-to-b from-accent/5 via-transparent to-transparent rounded-full blur-3xl -z-10" />
+                        <img
+                            src="./screenshots/1-balance.jpg"
+                            alt="Equity home screen showing a total balance of +3.5 hours"
+                            width={720}
+                            height={1565}
+                            className="w-[280px] md:w-[340px] h-auto rounded-[2rem] border border-border shadow-2xl shadow-primary/10"
+                        />
                     </div>
                 </div>
             </div>
