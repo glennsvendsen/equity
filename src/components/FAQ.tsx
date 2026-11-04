@@ -58,7 +58,7 @@ export function FAQ() {
         },
         {
             question: "Is there a Mac app?",
-            answer: "Yes. Equity for Mac is a menu bar companion for macOS 14 or later. It requires Equity Pro and uses the same account as the iOS app. Download the DMG from this page, open it and drag Equity to your Applications folder."
+            answer: "Yes. Equity for Mac is a menu bar companion for macOS 14 or later. It requires Equity Pro and uses the same account as the iOS app. Download the DMG from this page, open it and drag Equity to your Applications folder. Optional calendar suggestions are off by default."
         },
         {
             question: "How do I delete my account?",

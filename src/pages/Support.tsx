@@ -22,7 +22,11 @@ const faqs = [
     },
     {
         question: "Is there a Mac app?",
-        answer: "Yes. Equity for Mac is a menu bar app for macOS 14 or later. It shows your balance, score, week and month totals, a timer, quick add and recent entries. It requires Equity Pro (bought in the iOS app) and signs in with the same account. Download the DMG from the Equity website, open it and drag Equity to your Applications folder. If you see a 'locked' screen, get Pro in the iOS app and check again."
+        answer: "Yes. Equity for Mac is a menu bar app for macOS 14 or later. It shows your balance, score, week and month totals, a timer, quick add and recent entries, plus a Settings page (show balance in the menu bar, launch at login, timer and recent entries on or off). It requires Equity Pro (bought in the iOS app) and signs in with the same account. Download the DMG from the Equity website, open it and drag Equity to your Applications folder. If you see a 'locked' screen, get Pro in the iOS app and check again."
+    },
+    {
+        question: "What are calendar suggestions on the Mac?",
+        answer: "An optional feature, off by default. Turn it on in the Mac app's Settings and Equity reads your Mac's calendars to suggest extra time worked (events outside your work hours or on weekends) and days off (all-day vacation or sick events). Nothing is added automatically: press + to add a suggestion or x to dismiss it. You choose your work hours and which calendars count. Events stay on your Mac, and only the entries you add are saved to your account."
     },
     {
         question: "Can I delete my account?",

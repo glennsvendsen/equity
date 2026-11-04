@@ -34,7 +34,7 @@ const features = [
     {
         icon: Laptop,
         title: "Mac Menu Bar App",
-        description: "Keep your balance one glance away on your Mac. Same account, same data. Included with Equity Pro."
+        description: "Keep your balance one glance away on your Mac, with optional calendar suggestions. Same account, same data. Included with Equity Pro."
     },
     {
         icon: Shield,

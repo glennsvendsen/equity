@@ -5,6 +5,7 @@ const points = [
     "Balance gauge, score and hint",
     "Week and month totals",
     "Timer, quick add and recent entries",
+    "Calendar suggestions for extra time and days off",
     "Same account as iPhone, synced instantly",
 ];
 
@@ -33,7 +34,7 @@ const MacApp = () => {
                         </div>
 
                         <p className="text-lg text-muted-foreground max-w-md leading-relaxed">
-                            A small companion that lives next to your clock. Check where you stand, start a timer or log an hour without opening your phone.
+                            A small companion that lives next to your clock. Check where you stand, start a timer or log an hour without opening your phone. Optionally, let it suggest time from your calendar.
                         </p>
 
                         <ul className="space-y-3">
@@ -72,7 +73,7 @@ const MacApp = () => {
                 </div>
                     <div className="max-w-5xl mx-auto mt-16 p-8 rounded-2xl border border-border bg-card space-y-6">
                         <p className="text-sm tracking-label uppercase text-muted-foreground">Good to know</p>
-                        <dl className="grid md:grid-cols-3 gap-8 text-sm">
+                        <dl className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 text-sm">
                             <div>
                                 <dt className="font-medium mb-1">Requires Equity Pro</dt>
                                 <dd className="text-muted-foreground leading-relaxed">
@@ -83,6 +84,12 @@ const MacApp = () => {
                                 <dt className="font-medium mb-1">Sign in the same way</dt>
                                 <dd className="text-muted-foreground leading-relaxed">
                                     Use your email and password or Sign in with Apple, and your entries appear right away.
+                                </dd>
+                            </div>
+                            <div>
+                                <dt className="font-medium mb-1">Calendar suggestions</dt>
+                                <dd className="text-muted-foreground leading-relaxed">
+                                    Off by default. Switch it on in Settings and Equity suggests extra hours and days off from your calendar. Nothing is added until you press +, and your events stay on your Mac.
                                 </dd>
                             </div>
                             <div>
